@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import './App.css'
+import CartSection from './components/CartSection/CartSection'
 import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
 import MainSection from './components/MainSection/MainSection'
@@ -7,6 +9,7 @@ import OptionalSection from './components/OptionalSection/OptionalSection'
 import PricingSection from './components/PricingSection/PricingSection'
 import State from './components/State/State'
 import StepSection from './components/StepSection/StepSection'
+import ToggleSection from './components/ToggleSection/ToggleSection'
 
 const cardData = async()=>{
   const res =await fetch('/data.json')
@@ -16,6 +19,7 @@ const cardData = async()=>{
 const cardPromise = cardData();
 
 function App() {
+  const [activeBtn, setActiveBtn]=useState('products');
   
 
   return (
@@ -23,7 +27,9 @@ function App() {
      <Navbar></Navbar>
      <Hero></Hero>
      <State></State>
-     <MainSection cardPromise={cardPromise}></MainSection>
+     <ToggleSection activeBtn={activeBtn} setActiveBtn={setActiveBtn}></ToggleSection>
+      {activeBtn==='products' && <MainSection cardPromise={cardPromise}></MainSection>}
+      {activeBtn==='carts' && <CartSection></CartSection>}
      <StepSection></StepSection>
      <PricingSection></PricingSection>
      <OptionalSection></OptionalSection>

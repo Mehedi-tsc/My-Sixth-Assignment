@@ -4,7 +4,7 @@ import { IoCheckmark } from 'react-icons/io5';
 const Product = ({product}) => {
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-sm">
+            <div className="card rounded-2xl bg-base-100 shadow-sm">
                 <div className="card-body">
                     <div className='flex justify-end'>
                         <span className="badge badge-xs badge-warning">{product.tagType.toUpperCase()}</span>

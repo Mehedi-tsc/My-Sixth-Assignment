@@ -11,8 +11,8 @@ const StepSection = () => {
                     <h2 className='text-5xl font-bold'>Get Started in 3 Steps</h2>
                     <p className='text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
                 </div>
-                <div className='flex flex-col justify-center items-center lg:grid lg:grid-cols-3 gap-3'>
-                    <div className="card bg-base-100 w-96 shadow-sm">
+                <div className='flex flex-col justify-center items-center lg:grid lg:grid-cols-3 gap-10'>
+                    <div className="card w-full h-70 bg-base-100 rounded-2xl shadow-sm">
                        <div className="card-body text-center">
                             <div className='flex justify-end'>
                                 <div className='rounded-full bg-blue-500 p-2 w-fit'>
@@ -28,7 +28,7 @@ const StepSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card bg-base-100 w-96 shadow-sm">
+                    <div className="card w-full h-70 bg-base-100 rounded-2xl shadow-sm">
                        <div className="card-body text-center">
                             <div className='flex justify-end'>
                                 <div className='rounded-full bg-blue-500 p-2 w-fit'>
@@ -44,7 +44,7 @@ const StepSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card bg-base-100 w-96 shadow-sm">
+                    <div className="card w-full h-70 bg-base-100 rounded-2xl shadow-sm">
                         <div className="card-body text-center">
                             <div className='flex justify-end'>
                                 <div className='rounded-full bg-blue-500 p-2 w-fit'>

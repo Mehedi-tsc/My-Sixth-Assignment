@@ -7,8 +7,8 @@ const PricingSection = () => {
                 <h2 className='font-extrabold text-5xl'>Simple, Transparent Pricing</h2>
                 <p className='text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
-            <div className='flex flex-col justify-between items-center lg:grid lg:grid-cols-3 gap-4'>
-                <div className="card w-96 rounded-2xl bg-[#F2F2F2] shadow-lg h-110">
+            <div className='flex flex-col justify-between items-center lg:grid lg:grid-cols-3 gap-10'>
+                <div className="card w-full  rounded-2xl bg-[#F2F2F2] shadow-lg h-120">
                     <div className="card-body space-y-4">
                     
                         <div className="space-y-1">
@@ -42,15 +42,17 @@ const PricingSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 h-110 rounded-2xl bg-[#4F39F6] shadow-lg text-white">
+                <div className="card w-full h-120 rounded-2xl bg-[#4F39F6] shadow-lg text-white">
                     <div className="card-body space-y-4 relative">
-                        <div className="badge bg-[#FEF3C6] text-[#BB4D00] absolute top-0 left-0 translate-x-33  -translate-y-3">Most Popula</div>
+                        <div className='flex justify-center'>
+                             <div className="badge bg-[#FEF3C6] text-[#BB4D00] absolute top-0 -translate-y-3">Most Popula</div>
+                        </div>
                         <div className="space-y-1">
                             <h2 className="text-2xl font-bold">Pro</h2>
                             <p>Best for professionals</p>
                         </div>
                         <div>
-                            <span className="text-3xl font-bold">$0</span> <span>/Month</span>
+                            <span className="text-3xl font-bold">$29</span> <span>/Month</span>
                         </div>
                         <ul className="flex flex-1 flex-col gap-2 text-xs">
                             <li>
@@ -84,7 +86,7 @@ const PricingSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 h-110 rounded-2xl bg-[#F2F2F2] shadow-lg">
+                <div className="card w-full h-120 rounded-2xl bg-[#F2F2F2] shadow-lg">
                     <div className="card-body space-y-4">
                     
                         <div className="space-y-1">

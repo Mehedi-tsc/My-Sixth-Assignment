@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='flex text-center lg:text-left gap-3 flex-col lg:grid lg:grid-cols-5 lg:justify-items-center'>
                     <div className='space-y-4'>
                         <h2 className='text-3xl font-bold text-white'>DigiTools</h2>
-                        <p className='text-white/50'>Premium digital tools for creators,<br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
+                        <p className='text-white/50'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
 
                     </div>
                     <div className='space-y-4'>
@@ -36,7 +36,7 @@ const Footer = () => {
                     </div>
                     <div className='space-y-4'>
                         <h2 className='text-xl font-medium text-white'>Social Links</h2>
-                        <div className='flex justify-between items-center'>
+                        <div className='flex justify-center gap-2 md:justify-center md:gap-5 lg:justify-between items-center'>
                             <img className='w-5 h-5' src={instagram} alt="" />
                             <img className='w-5 h-5' src={facebook} alt="" />
                             <img className='w-5 h-5' src={twitter} alt="" />
