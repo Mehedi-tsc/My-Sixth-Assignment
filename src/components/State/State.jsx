@@ -2,7 +2,7 @@ import React from 'react';
 
 const State = () => {
     return (
-        <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] mb-28'>
+        <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] mb-28 w-screen'>
            <div className='text-center w-11/12 mx-auto p-14 flex flex-col lg:flex-row lg:justify-around items-center gap-5'>
            <div>
              <h2 className='text-white text-5xl font-extrabold'>50K+</h2>
