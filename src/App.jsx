@@ -2,6 +2,7 @@ import './App.css'
 import Hero from './components/Hero/Hero'
 import MainSection from './components/MainSection/MainSection'
 import Navbar from './components/Navbar/Navbar'
+import PricingSection from './components/PricingSection/PricingSection'
 import State from './components/State/State'
 import StepSection from './components/StepSection/StepSection'
 
@@ -22,6 +23,7 @@ function App() {
      <State></State>
      <MainSection cardPromise={cardPromise}></MainSection>
      <StepSection></StepSection>
+     <PricingSection></PricingSection>
     </>
   )
 }
