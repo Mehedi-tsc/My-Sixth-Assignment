@@ -24,7 +24,7 @@ const Hero = () => {
                 </div>
             </div>
             <div>
-                <img src={heroImg} alt="" />
+                <img className='w-screen lg:w-125' src={heroImg} alt="" />
             </div>
 
         </div>

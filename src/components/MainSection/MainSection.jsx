@@ -13,7 +13,7 @@ const MainSection = ({ cardPromise }) => {
                     <input type="radio" name="my_tabs_1" className="tab w-40 rounded-full font-bold checked:bg-blue-500 checked:text-white" aria-label="Cart (2)"/>
                 </div>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
+            <div className='flex flex-col justify-center items-center lg:grid lg:grid-cols-3 gap-5'>
                 {
                     products.map(product => <Product product={product} key={product.id}></Product>)
                 }

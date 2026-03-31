@@ -3,6 +3,7 @@ import Hero from './components/Hero/Hero'
 import MainSection from './components/MainSection/MainSection'
 import Navbar from './components/Navbar/Navbar'
 import State from './components/State/State'
+import StepSection from './components/StepSection/StepSection'
 
 const cardData = async()=>{
   const res =await fetch('/data.json')
@@ -20,6 +21,7 @@ function App() {
      <Hero></Hero>
      <State></State>
      <MainSection cardPromise={cardPromise}></MainSection>
+     <StepSection></StepSection>
     </>
   )
 }
