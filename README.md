@@ -11,6 +11,7 @@ This is a responsive website where people can buy digital tools. It has a shoppi
 - React.js
 - Tailwind CSS
 - DaisyUI
+- JavaScript (ES6+)
 - React Toastify
 - JSON
 - Google Font
