@@ -20,16 +20,17 @@ const cardPromise = cardData();
 
 function App() {
   const [activeBtn, setActiveBtn]=useState('products');
+  const [cartProducts, setCartProducts] = useState([]);
   
 
   return (
     <>
-     <Navbar></Navbar>
+     <Navbar cartProducts={cartProducts}></Navbar>
      <Hero></Hero>
      <State></State>
-     <ToggleSection activeBtn={activeBtn} setActiveBtn={setActiveBtn}></ToggleSection>
-      {activeBtn==='products' && <MainSection cardPromise={cardPromise}></MainSection>}
-      {activeBtn==='carts' && <CartSection></CartSection>}
+     <ToggleSection cartProducts={cartProducts} activeBtn={activeBtn} setActiveBtn={setActiveBtn}></ToggleSection>
+      {activeBtn==='products' && <MainSection cartProducts={cartProducts} setCartProducts ={setCartProducts} cardPromise={cardPromise}></MainSection>}
+      {activeBtn==='carts' && <CartSection cartProducts={cartProducts} setCartProducts={setCartProducts}></CartSection>}
      <StepSection></StepSection>
      <PricingSection></PricingSection>
      <OptionalSection></OptionalSection>

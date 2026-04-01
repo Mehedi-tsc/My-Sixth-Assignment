@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IoCheckmark } from 'react-icons/io5';
+import { toast } from 'react-toastify';
 
-const Product = ({product}) => {
+const Product = ({product, cartProducts, setCartProducts}) => {
+    const [buyStatus, setBuyStatus]=useState(false);
+    const handleClickedBuyNowBtn =()=>{
+        setBuyStatus(true);
+        setCartProducts([...cartProducts, product]);
+        toast.success("Added to cart successfuly")
+    }
+    
+    
     return (
         <div>
             <div className="card rounded-2xl bg-base-100 shadow-sm">
@@ -24,7 +33,7 @@ const Product = ({product}) => {
                        }
                     </ul>
                     <div className="mt-6">
-                        <button className="btn btn-primary w-full rounded-full font-bold">Buy Now</button>
+                        <button onClick={handleClickedBuyNowBtn} className="btn btn-primary w-full rounded-full font-bold">{buyStatus?'Added to cart':'Buy Now'}</button>
                     </div>
                 </div>
             </div>
